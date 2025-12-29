@@ -1,0 +1,24 @@
+package com.practice.arrays;
+
+import java.util.Scanner;
+public class SumOfElements {
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the no. of Elements : ");
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		
+		for(int i=0 ;i<n; i++) {
+			System.out.print("Enter the elements " + i + ": ");
+			arr[i] = sc.nextInt();
+		}
+		
+		int sum =0;
+		for(int j=0 ; j<n ; j++) {
+			sum = sum + arr[j];
+		}
+		
+		System.out.println("Sum of elements is : " + sum);
+		sc.close();
+	}
+}
