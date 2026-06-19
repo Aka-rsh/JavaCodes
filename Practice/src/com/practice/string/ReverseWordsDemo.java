@@ -1,10 +1,13 @@
 package com.practice.string;
 
+import java.util.Arrays;
+
 //Optimized  - Avoids the extra space at the end.
 public class ReverseWordsDemo {
     public static void main(String[] args) {
         String str = "ram is good";
         String[] words = str.split(" "); // Split the string by spaces
+        System.out.println(Arrays.toString(words));
         StringBuilder reversed = new StringBuilder();
 
         // Loop from the end to the start

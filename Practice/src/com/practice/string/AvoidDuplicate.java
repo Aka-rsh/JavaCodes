@@ -2,7 +2,7 @@ package com.practice.string;
 
 public class AvoidDuplicate {
     public static void main(String[] args) {
-        String str = "abca";
+        String str = "abcac";
         str = str.toLowerCase();
         char[] ch = str.toCharArray();  // fixed
 
